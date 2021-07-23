@@ -1,1 +1,8 @@
-#
+#  Kube Controler
+  # kubectl version
+  
+  # Deploy
+     1)gcloud container clusters get-credentials my-cluster --zone us-central1-a --project annular-orb-320619
+     2)kubectl create deployment <name>
+       -- example: kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:1.0.0.RELEASE
+     3) kubectl expose deployment  hello-world-rest-api --type=LoadBalancer --port=8080
